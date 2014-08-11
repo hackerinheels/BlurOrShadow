@@ -21,6 +21,9 @@
 		7C403BD4199962AA00B51A85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C403BB6199962AA00B51A85 /* UIKit.framework */; };
 		7C403BDC199962AA00B51A85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C403BDA199962AA00B51A85 /* InfoPlist.strings */; };
 		7C403BDE199962AA00B51A85 /* BlurOrShadowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C403BDD199962AA00B51A85 /* BlurOrShadowTests.m */; };
+		7C403BE91999664600B51A85 /* NatGeo01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C403BE71999664600B51A85 /* NatGeo01.jpg */; };
+		7C403BEA1999664600B51A85 /* NatGeo04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C403BE81999664600B51A85 /* NatGeo04.jpg */; };
+		7C403BED19996B9100B51A85 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C403BEC19996B9100B51A85 /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		7C403BD9199962AA00B51A85 /* BlurOrShadowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlurOrShadowTests-Info.plist"; sourceTree = "<group>"; };
 		7C403BDB199962AA00B51A85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7C403BDD199962AA00B51A85 /* BlurOrShadowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlurOrShadowTests.m; sourceTree = "<group>"; };
+		7C403BE71999664600B51A85 /* NatGeo01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NatGeo01.jpg; sourceTree = "<group>"; };
+		7C403BE81999664600B51A85 /* NatGeo04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NatGeo04.jpg; sourceTree = "<group>"; };
+		7C403BEB19996B9100B51A85 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		7C403BEC19996B9100B51A85 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +119,10 @@
 		7C403BB8199962AA00B51A85 /* BlurOrShadow */ = {
 			isa = PBXGroup;
 			children = (
+				7C403BEB19996B9100B51A85 /* UIImage+ImageEffects.h */,
+				7C403BEC19996B9100B51A85 /* UIImage+ImageEffects.m */,
+				7C403BE71999664600B51A85 /* NatGeo01.jpg */,
+				7C403BE81999664600B51A85 /* NatGeo04.jpg */,
 				7C403BC1199962AA00B51A85 /* GAAppDelegate.h */,
 				7C403BC2199962AA00B51A85 /* GAAppDelegate.m */,
 				7C403BC4199962AA00B51A85 /* Main.storyboard */,
@@ -231,6 +242,8 @@
 			files = (
 				7C403BCB199962AA00B51A85 /* Images.xcassets in Resources */,
 				7C403BBD199962AA00B51A85 /* InfoPlist.strings in Resources */,
+				7C403BE91999664600B51A85 /* NatGeo01.jpg in Resources */,
+				7C403BEA1999664600B51A85 /* NatGeo04.jpg in Resources */,
 				7C403BC6199962AA00B51A85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C403BED19996B9100B51A85 /* UIImage+ImageEffects.m in Sources */,
 				7C403BC3199962AA00B51A85 /* GAAppDelegate.m in Sources */,
 				7C403BC9199962AA00B51A85 /* GAViewController.m in Sources */,
 				7C403BBF199962AA00B51A85 /* main.m in Sources */,

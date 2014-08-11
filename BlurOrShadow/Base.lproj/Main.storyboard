@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="GAViewController" sceneMemberID="viewController">
@@ -15,13 +15,87 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Cd-hJ-vWB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NatGeo01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="o3c-cS-xdm">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="o3c-cS-xdm" secondAttribute="trailing" id="J6j-Hx-nc2"/>
+                                    <constraint firstAttribute="bottom" secondItem="o3c-cS-xdm" secondAttribute="bottom" id="NJt-ZT-qNR"/>
+                                    <constraint firstItem="o3c-cS-xdm" firstAttribute="leading" secondItem="8Cd-hJ-vWB" secondAttribute="leading" id="nPt-zL-bPu"/>
+                                    <constraint firstItem="o3c-cS-xdm" firstAttribute="top" secondItem="8Cd-hJ-vWB" secondAttribute="top" id="wUA-8e-U6m"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yuI-ID-fBS">
+                                <rect key="frame" x="20" y="84" width="280" height="400"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NatGeo04.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tVF-B2-RL1">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="400"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="tVF-B2-RL1" firstAttribute="top" secondItem="yuI-ID-fBS" secondAttribute="top" id="57x-ZH-zjJ"/>
+                                    <constraint firstItem="tVF-B2-RL1" firstAttribute="leading" secondItem="yuI-ID-fBS" secondAttribute="leading" id="HNe-vT-Z47"/>
+                                    <constraint firstAttribute="trailing" secondItem="tVF-B2-RL1" secondAttribute="trailing" id="Jb6-FX-OOb"/>
+                                    <constraint firstAttribute="bottom" secondItem="tVF-B2-RL1" secondAttribute="bottom" id="uyw-rU-afq"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cS9-0l-oj8">
+                                <rect key="frame" x="137" y="518" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="1nw-4X-YNs"/>
+                                </constraints>
+                                <state key="normal" title="Blur">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleLook:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4pe-ey-LAE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cS9-0l-oj8" firstAttribute="centerX" secondItem="yuI-ID-fBS" secondAttribute="centerX" constant="7" id="4JJ-Sp-QHK"/>
+                            <constraint firstItem="8Cd-hJ-vWB" firstAttribute="centerY" secondItem="yuI-ID-fBS" secondAttribute="centerY" id="BQD-dz-LVh"/>
+                            <constraint firstAttribute="bottom" secondItem="cS9-0l-oj8" secondAttribute="bottom" constant="20" symbolic="YES" id="NU0-RV-HrU"/>
+                            <constraint firstItem="8Cd-hJ-vWB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="apV-EX-4wy"/>
+                            <constraint firstItem="yuI-ID-fBS" firstAttribute="centerX" secondItem="8Cd-hJ-vWB" secondAttribute="centerX" id="biH-jJ-VHB"/>
+                            <constraint firstItem="yuI-ID-fBS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="dkE-ty-NL2"/>
+                            <constraint firstAttribute="trailing" secondItem="yuI-ID-fBS" secondAttribute="trailing" constant="20" symbolic="YES" id="qSM-3K-eko"/>
+                            <constraint firstItem="yuI-ID-fBS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="64" id="th8-CE-pQu"/>
+                            <constraint firstAttribute="bottom" secondItem="8Cd-hJ-vWB" secondAttribute="bottom" id="vLr-LP-eBa"/>
+                            <constraint firstItem="8Cd-hJ-vWB" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="z1F-7I-W4e"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgview" destination="8Cd-hJ-vWB" id="Oxz-Up-IXY"/>
+                        <outlet property="blur" destination="cS9-0l-oj8" id="0DY-i0-bPm"/>
+                        <outlet property="iv" destination="tVF-B2-RL1" id="d9K-JL-dMY"/>
+                        <outlet property="iv1" destination="o3c-cS-xdm" id="Ofz-1M-1hM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="NatGeo01.jpg" width="3200" height="2000"/>
+        <image name="NatGeo04.jpg" width="3200" height="2000"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
